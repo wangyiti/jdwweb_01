@@ -1,0 +1,123 @@
+.jd_layout{
+    width: 100%;
+    min-width:320px ;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #cccccc;
+    height: 1000px;
+   
+}
+/* 顶部搜索块 */
+.jd_search{
+    max-width: 640px;
+    width:100% ;
+    height: 40px;
+    position: fixed;
+    background-color: #e92322;
+    z-index: 999;
+}
+.jd_logo{
+    width: 56px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    background: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position:0 -108px ;
+}
+.jd_login{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+    color: #fff;
+}
+.jd_searchBox{
+    width: 100%;
+    height: 100%;
+    padding-left:76px;
+    padding-right:50px;
+}
+.jd_searchBox > input{
+    width: 100%;
+    height: 30px;
+    margin-top:5px;
+    border-radius: 15px;
+    padding-left:30px;
+    color: #666;
+}
+.jd_searchBox::before{
+    content: "";
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    background: url(../images/jd-sprites.png);
+    background-size: 200px 200px ;
+    background-position: -56px -108px;
+    left: 80px;
+    top: 9px;
+}
+/* 轮播图样式 */
+.jd_banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.jd_bannerImg{
+    width: 800%;
+
+}
+.jd_bannerImg >li{
+    width: 12.5%;
+    float: left;
+
+}
+.jd_bannerImg>li img{
+    width: 100%;
+    display: block;
+
+}
+.jd_bannerIndicator{
+    width: 128px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+     transform: translate(-50%);
+}
+.jd_bannerIndicator >li{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    float: left;
+    margin-left: 10px;
+}
+.jd_bannerIndicator > li:first-of-type{
+    margin-left: 0px;
+} 
+.jd_bannerIndicator >li.active{
+    background-color: #fff;
+}
+/* 导航样式 */
+.jd_nav {
+width: 100%;
+padding: 10px 0;
+background-color: #fff;
+}
+.jd_nav li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+.jd_nav li img{
+    width: 60px;
+}
+.jd_nav li p{
+    line-height: 25px;
+}
