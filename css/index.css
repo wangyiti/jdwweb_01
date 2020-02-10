@@ -3,8 +3,7 @@
     min-width:320px ;
     max-width: 640px;
     margin: 0 auto;
-    background-color: #cccccc;
-    height: 1000px;
+    background-color: #eeeeee;
    
 }
 /* 顶部搜索块 */
@@ -88,7 +87,7 @@
     left: 50%;
     bottom: 3px;
      transform: translate(-50%);
-}
+} 
 .jd_bannerIndicator >li{
     width: 6px;
     height: 6px;
@@ -120,4 +119,99 @@ background-color: #fff;
 }
 .jd_nav li p{
     line-height: 25px;
+}
+/* 产品块样式 */
+.jd_product{
+  width: 100%;
+
+}
+.jd_productBox{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #cccccc;
+}
+.jd_productBox>.jd_pTip{
+width: 100%;
+height: 30px;
+line-height: 30px;
+border-bottom: 1px solid #cccccc;
+color: #666;
+
+}
+.jd_productBox>.jd_pTip >h3{
+    position: relative;
+    padding-left: 30px;
+}
+.jd_productBox>.jd_pTip >h3::before{
+    content: '';
+    width: 3px;
+    height: 12px;
+    background-color: #e92322;
+    left: -8px;
+    top: 9px;
+    position: absolute;
+}
+/* 产品块图片超链接 */
+.a_50{
+    width: 50%;
+    display: block;
+}
+.a_50 > img{
+    width: 100%;
+    display: block;
+}
+.b_left{
+    border-left: 1px solid #cccccc;
+}
+.b_bottom{
+    border-bottom: 1px solid #cccccc;
+}
+.b_right{
+    border-right: 1px solid #cccccc;
+}
+
+.jd_sk >.jd_pTip {
+    border-bottom: none;
+}
+.jd_sk > .jd_pTip .jd_sk_icon{
+   width: 16px;
+   height: 20px;
+   background: url(../images/seckill-icon.png);
+   background-size: 16px 20px;
+   margin-top: 3px;
+
+}
+.jd_sk > .jd_pTip .jd_sk_text{
+    color: #e92322;
+}
+.jd_sk > .jd_pTip .jd_sk_time >span{
+    width: 13px;
+    height: 18px;
+    display: inline-block;
+    line-height: 18px;
+    color: #fff;
+    background-color: #000000;
+    text-align: center;
+}
+.jd_sk > .jd_pTip .jd_sk_time >span:nth-last-of-type(3n){
+color: #000000;
+background-color: transparent;
+width: 8px;
+
+}
+.jd_sk .jd_pContent{
+    padding:20px;
+}
+.jd_sk .jd_pContent > ul{
+    width: 100%;
+}
+.jd_sk .jd_pContent > ul > li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.jd_sk .jd_pContent > ul > li img{
+    width: 60%;
+    display: inline-block;
 }
